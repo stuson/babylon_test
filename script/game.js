@@ -7,7 +7,7 @@ const engine = new BABYLON.Engine(canvas, true, {
 function createScene() {
     let scene = new BABYLON.Scene(engine)
     
-    let camera = new BABYLON.ArcRotateCamera('camera1', new BABYLON.Vector3(0, 6, -20), scene)
+    let camera = new BABYLON.ArcRotateCamera('camera1', Math.PI/2, Math.PI/2, 2, new BABYLON.Vector3(0, 6, -20), scene)
     camera.setTarget(BABYLON.Vector3.Zero())
     camera.attachControl(canvas, true)
 
@@ -23,7 +23,7 @@ function createScene() {
         width: 60,
         height: 6,
         subdivisions: 2,
-        sideOrientation: BABYLON.Mesh.FRONTSIDE
+        sideOrientation: BABYLON.Mesh.DOUBLESIDE
     }, scene)
 
     return scene
