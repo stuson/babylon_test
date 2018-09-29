@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    background-color: #222228;
+    font-family: sans-serif;
+    color: #ddd;
+}
+
+header {
+    display: flex;
+    height: 100px;
+    background-color: #445;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 3px 0px 5px rgba(0,0,0,0.2);
+}
+
+#logo {
+    margin-right: 30px;
+    height: 90%;
+}
+
+.img-responsive {
+    height: 100%;
+    width: auto;
+}
+
+#title, #subtitle {
+    display: inline;
+    margin: 0px 20px;
+}
+
+#title {
+    text-shadow: 1px 1px 10px rgba(255,255,200,0.5);
+}
+
+#subtitle {
+    color: #888;
+}
+
+.no-decoration {
+    color: #ddd;
+    text-decoration: none;
+}
